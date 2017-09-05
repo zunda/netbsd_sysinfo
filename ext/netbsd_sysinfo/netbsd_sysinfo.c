@@ -41,7 +41,7 @@ VALUE nprocs(VALUE self)
 	return INT2FIX(cnt);
 }
 
-Init_sysinfo(void)
+Init_netbsd_sysinfo(void)
 {
 	rb_mNetbsdSysinfo = rb_define_module("NetbsdSysinfo");
 	rb_define_module_function(rb_mNetbsdSysinfo, "loadavg", loadavg, 0);
