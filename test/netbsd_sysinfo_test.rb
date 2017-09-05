@@ -10,15 +10,15 @@ class NetbsdSysinfoTest < Minitest::Test
 		loaduptime = `uptime`.strip.split( /[, ]+/ ).slice(-3..-1).map{ |v| v.to_f }
 		assert_equal( 3, load.size )
 		load.zip( loaduptime ).each do |v|
-			assert_in_delta( v[1], v[0], 5e-3 )
+			assert_in_delta( v[1], v[0], 1e-2 )
 		end
 	end
 
 	def test_nprocs
 		nprocs = NetbsdSysinfo::nprocs
 		whoami = `whoami`
-		nprocs_ps = `ps -x -U #{whoami}`.delete("^\n").size - 2
-		# 2: header line and ps process
+		nprocs_ps = `ps -x -U #{whoami}`.delete("^\n").size - 3
+		# 3: header line, shell, and ps process itself
 		assert_equal( nprocs_ps, nprocs )
 	end
 end
