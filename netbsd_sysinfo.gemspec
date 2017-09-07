@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["zunda at freeshell.org"]
 
   spec.summary       = %q{A Ruby binding to extract load average and number of processes of the user on NetBSD}
-  spec.homepage      = "TODO"
+  spec.homepage      = "https://github.com/zunda/netbsd_sysinfo"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
