@@ -12,6 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{A Ruby binding to extract load average and number of processes of the user on NetBSD}
   spec.homepage      = "https://github.com/zunda/netbsd_sysinfo"
   spec.license       = "MIT"
+  spec.platform      = ['ruby', 'x86_64-netbsdelf']
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
