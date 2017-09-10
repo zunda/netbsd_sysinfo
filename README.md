@@ -20,7 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+$ irb
+> require 'bundler/setup'
+> require 'netbsd_sysinfo'
+> NetbsdSysinfo.loadavg
+# Returns an array of system load averages in 1, 5, and 15 minutes.
+#=> [0.93505859375, 1.08837890625, 1.1435546875]
+> NetbsdSysinfo.nprocs
+# Returns number of active processes for the current user
+#=> 4
+```
 
 ## Development
 
@@ -30,7 +40,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/netbsd_sysinfo.
+Bug reports and pull requests are welcome on GitHub at https://github.com/zunda/netbsd_sysinfo.
 
 ## License
 
