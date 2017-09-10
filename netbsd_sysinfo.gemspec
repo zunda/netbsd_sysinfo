@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/zunda/netbsd_sysinfo"
   spec.license       = "MIT"
   spec.platform      = Gem::Platform.new('netbsd')
-	# kvm_getproc2(3) seems to be only available on *BSD
+  # kvm_getproc2(3) seems to be only available on *BSD
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
