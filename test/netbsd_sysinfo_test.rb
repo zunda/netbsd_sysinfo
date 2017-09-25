@@ -1,9 +1,9 @@
 require "test_helper"
 
 class NetbsdSysinfoTest < Minitest::Test
-  def test_that_it_has_a_version_number
-    refute_nil ::NetbsdSysinfo::VERSION
-  end
+	def test_that_it_has_a_version_number
+		refute_nil ::NetbsdSysinfo::VERSION
+	end
 
 	def test_loadavg
 		load = NetbsdSysinfo::loadavg
